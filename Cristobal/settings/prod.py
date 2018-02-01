@@ -1,4 +1,4 @@
-from pet_guru.settings.base import *
+from Cristobal.settings.base import *
 
 DEBUG = False
 
@@ -8,10 +8,10 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('PET_GURU_DB_NAME'),
-        'USER': os.getenv('PET_GURU_DB_USER'),
-        'PASSWORD': os.getenv('PET_GURU_DB_PASSWORD'),
-        'HOST': os.getenv('PET_GURU_DB_HOST'),
-        'PORT': os.getenv('PET_GURU_DB_PORT'),
+        'NAME': os.getenv('CRISTOBAL_TAROT_DB_NAME'),
+        'USER': os.getenv('CRISTOBAL_TAROT_DB_USER'),
+        'PASSWORD': os.getenv('CRISTOBAL_TAROT_DB_PASSWORD'),
+        'HOST': os.getenv('CRISTOBAL_TAROT_DB_HOST'),
+        'PORT': os.getenv('CRISTOBAL_TAROT_DB_PORT'),
     }
 }

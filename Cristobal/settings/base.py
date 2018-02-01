@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('PET_GURU_SECRET_KEY')
+SECRET_KEY = os.getenv('CRISTOBAL_TAROT_SECRET_KEY')
 
 # Application definition
 
@@ -23,15 +23,11 @@ DJANGO_APPS = [
 THIRD_APPS = []
 
 USER_APPS = [
-    'users.apps.UsersConfig',
-    'home.apps.HomeConfig',
-    'analytics.apps.AnalyticsConfig',
-    'background_task',
+    'tarot.apps.TarotConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + USER_APPS
 
-AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -43,7 +39,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pet_guru.urls'
+ROOT_URLCONF = 'Cristobal.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pet_guru.wsgi.application'
+WSGI_APPLICATION = 'Cristobal.wsgi.application'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
